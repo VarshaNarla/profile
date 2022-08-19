@@ -14,8 +14,8 @@ const App = () => {
   const [download, setDownload] = useState(false)
   return (
     <div className='main_container'>
-    <div className='card' data-state="#about">
-      <div className='card_header'>
+    <div className='card'>
+      <div className='card_header animate'>
          <div className='card_cover'></div> 
           <img className='card_pic' src={profilePic}></img>
           <h1 className='card_fullname'>Varsha Narla </h1>
@@ -24,7 +24,7 @@ const App = () => {
       <div className='card_main'>
         {/* About section */}
         { page === 'about' && 
-          <div className='card_section' id='about'> 
+          <div className={page === 'about' ? 'card_section animate' : 'card_section'} id='about'> 
             <div className='card_content'>
               <div className='card_subtitle'>ABOUT</div>
               <p className='about_data'>
@@ -63,7 +63,7 @@ const App = () => {
         } 
         {/* Experience section */}
         { page === 'exp' && 
-          <div className='card_section ' id='exp'> 
+          <div className={page === 'exp' ? 'card_section animate' : 'card_section'} id='exp'> 
             <div className='card_content'>
               <div className='card_subtitle'>WORK EXPERIENCE </div>
                 <div className='card_timeline'>
@@ -104,7 +104,7 @@ const App = () => {
                         <p className='card_project_title'>City </p>
                       </div>
                       <div className='card_projects_details'>
-                        <a href='#'>
+                        <a href='https://varshanarla.github.io/profile/'>
                           <img src={aries} className='card_project_icons'></img>
                         </a>
                         <p className='card_project_title'>Profile </p>
@@ -117,7 +117,7 @@ const App = () => {
         }
         {/* Contact section */}
         { page === 'contact' && 
-          <div className='card_section ' id='exp'> 
+          <div className={page === 'contact' ? 'card_section animate' : 'card_section'}  id='exp'> 
             <div className='card_content'>
                 <div className='card_subtitle'>CONTACT</div>
                   <div className='card_contact'>

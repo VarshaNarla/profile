@@ -8,6 +8,21 @@ import email from './img/email.png'
 import aries from './img/aries.png'
 import logo from './img/logo.png'
 import resume from './img/resume.png'
+import anypoint from './img/anypoint.png'
+import bitbucket from './img/bitbucket.jpg'
+import CSS3 from './img/CSS3.png'
+import dataweave from './img/dataweave.png'
+import firebasepng from './img/firebasepng.png'
+import git from './img/git.png'
+import html from './img/html.png'
+import js from './img/js.png'
+import json from './img/json.webp'
+import mulesoft from './img/mulesoft.png'
+import postman from './img/postman.png'
+import raml from './img/raml.png'
+import react from './img/react.png'
+import tailwindcss from './img/tailwindcss.png'
+import vscode from './img/vscode.jpg'
 
 const App = () => {
   const [page, setPage] = useState("about");
@@ -21,7 +36,7 @@ const App = () => {
           <h1 className='card_fullname'>Varsha Narla </h1>
            <h2 className='card_jobtitle'>Application Development Analyst </h2>
       </div>
-      <div className='card_main'>
+      <div className={(page === 'exp' || page === 'skill') ? 'card_main exp_height' : 'card_main'}>
         {/* About section */}
         { page === 'about' && 
           <div className={page === 'about' ? 'card_section animate' : 'card_section'} id='about'> 
@@ -115,6 +130,88 @@ const App = () => {
             </div>
           </div>
         }
+        {/* About section */}
+        { page === 'skill' && 
+          <div className={page === 'skill' ? 'card_section animate' : 'card_section'} id='skill'> 
+            <div className='card_content'>
+              <div className='card_subtitle'>TECH SKILL</div>
+              <div className='card_skill'>
+                <div className='card_skill_title'>MiddleWare</div>
+                <div className='card_skill_desp'>
+                  <div className='card_skill_desp_items'>
+                    <img src={mulesoft} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>MULESOFT</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={dataweave} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>DATAWEAVE</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={raml} className="card_skill_icon" style={{width:"35px",height:'35px'}}></img>
+                    <p className='card_skill_icon_title'>RAML</p>
+                  </div>  
+                </div>
+                <div className='card_skill_title'>FrontEnd</div>
+                <div className='card_skill_desp'>
+                  <div className='card_skill_desp_items'>
+                    <img src={html} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>HTML</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={CSS3} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>CSS</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={json} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>JSON</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={js} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>JS</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={react} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>REACT</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={tailwindcss} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>TAILWINDCSS</p>
+                  </div>
+                </div>
+                <div className='card_skill_title'>Familiar With</div>
+                <div className='card_skill_desp'>
+                  <div className='card_skill_desp_items'>
+                    <img src={bitbucket} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>BiTBUCKET</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={git} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>GITHUB</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={postman} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>POSTMAN</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={firebasepng} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>FIREBASE</p>
+                  </div>
+                </div>
+                <div className='card_skill_title'>Familiar IDEs</div>
+                <div className='card_skill_desp'>
+                  <div className='card_skill_desp_items'>
+                    <img src={vscode} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>VS CODE</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={anypoint} className="card_skill_icon"></img>
+                    <p className='card_skill_icon_title'>ANYPOINT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        } 
         {/* Contact section */}
         { page === 'contact' && 
           <div className={page === 'contact' ? 'card_section animate' : 'card_section'}  id='exp'> 
@@ -146,6 +243,7 @@ const App = () => {
       <div className='card_buttons'>
         <button data-section="#about" className={ (page ==='about') ? 'is_active' : "" }  onClick={()=> {setPage("about")}} >About</button>
         <button data-section="#experience" className={ (page ==='exp') ? 'is_active' : "" }  onClick={()=> {setPage("exp")}} >Experience</button>
+        <button data-section="#experience" className={ (page ==='skill') ? 'is_active' : "" }  onClick={()=> {setPage("skill")}} >Skill</button>
         <button data-section="#contact" className={ (page ==='contact') ? 'is_active' : "" }  onClick={()=> {setPage("contact")}}  >Contact</button>
       </div>
     </div>

@@ -52,6 +52,12 @@
 .card .card_main{
   padding-top: 0px;
   margin-top: 20px;
+  height: 200px;
+  overflow: inherit;
+  scroll-behavior: smooth;
+}
+.exp_height{
+  height: 380px !important;
 }
 .card_header{
   position: relative;
@@ -164,6 +170,13 @@
   margin-bottom: 5px;
   font-size: 15px;
  }
+ .card_skill_title{
+  color: #bb89bf;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+ }
  .card_item_desp{
   color: #85478a;
   font-size: 15px;
@@ -254,4 +267,28 @@
   color: greenyellow;
   margin: 0px;
   margin-left: 3px;
+}
+.card_skill{
+  margin: 10px 5px;
+}
+.card_skill_desp{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.card_skill_icon{
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+.card_skill_icon_title{
+  font-size: 10px;
+  color: #bb89bf;
+  margin-top: 5px;
+}
+.card_skill_desp_items{
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  align-items: center;
 }

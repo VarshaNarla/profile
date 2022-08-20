@@ -147,7 +147,7 @@ const App = () => {
                     <p className='card_skill_icon_title'>DATAWEAVE</p>
                   </div>
                   <div className='card_skill_desp_items'>
-                    <img src={raml} className="card_skill_icon" style={{width:"35px",height:'35px'}}></img>
+                    <img src={raml} className="card_skill_icon" style={{width:"40px"}}></img>
                     <p className='card_skill_icon_title'>RAML</p>
                   </div>  
                 </div>
@@ -162,16 +162,16 @@ const App = () => {
                     <p className='card_skill_icon_title'>CSS</p>
                   </div>
                   <div className='card_skill_desp_items'>
-                    <img src={json} className="card_skill_icon"></img>
-                    <p className='card_skill_icon_title'>JSON</p>
-                  </div>
-                  <div className='card_skill_desp_items'>
                     <img src={js} className="card_skill_icon"></img>
                     <p className='card_skill_icon_title'>JS</p>
                   </div>
                   <div className='card_skill_desp_items'>
                     <img src={react} className="card_skill_icon"></img>
                     <p className='card_skill_icon_title'>REACT</p>
+                  </div>
+                  <div className='card_skill_desp_items'>
+                    <img src={json} className="card_skill_icon" style={{width:"40px"}}></img>
+                    <p className='card_skill_icon_title'>JSON</p>
                   </div>
                   <div className='card_skill_desp_items'>
                     <img src={tailwindcss} className="card_skill_icon"></img>

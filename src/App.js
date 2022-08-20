@@ -219,7 +219,7 @@ const App = () => {
                 <div className='card_subtitle'>CONTACT</div>
                   <div className='card_contact'>
                     <img src={location} className="card_contact_icon"></img>
-                    <p className='card_contact_details'>Vasavi Heights, Vidya Nagar, Hyderabad, 500044, Telangana </p>
+                    <p className='card_contact_details'>Hyderabad, Telangana </p>
                   </div>
                   <div className='card_contact'>
                     <img src={phone} className="card_contact_icon"></img>
